@@ -16,6 +16,7 @@ const PORT =process.env.PORT || 5000; // from env env file we re using PORT if w
 app.use(express.json()); // Middleware allows us to parse JSON request bodies
 
 
+
 // Serve frontend static files
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '..', 'Frontend', 'dist')));
